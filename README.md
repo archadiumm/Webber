@@ -36,11 +36,12 @@ local Embed: Webber.jsEmbed = Webber.js.new()
 
 Next, you can use [discord.js (14.26.4)](https://discordjs.guide/legacy/popular-topics/embeds)'s EmbedBuilder syntax to build your own Embed. Here is a quick example if you are stuck.
 ```luau
+-- ⚠️ You don't need to include all the elements showcased below. If you want a simpler embed, leave some out.
 local Embed: Webber.jsEmbed = Webber.js.new()
 Embed.setColor(0x0099ff)
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
-	.setAuthor({ name = 'Some name', iconURL = 'https://i.imgur.com/AfFp7pu.png', url = 'https://discord.js.org' })
+	.setAuthor({ name = 'Some name', icon_url = 'https://i.imgur.com/AfFp7pu.png', url = 'https://discord.js.org' })
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
 	.addFields(
@@ -50,7 +51,7 @@ Embed.setColor(0x0099ff)
 	.addFields({ name = 'Inline field title', value = 'Some value here', inline = true })
 	.setImage('https://i.imgur.com/AfFp7pu.png')
 	.setTimestamp()
-	.setFooter({ text = 'Some footer text here', iconURL = 'https://i.imgur.com/AfFp7pu.png' })
+	.setFooter({ text = 'Some footer text here', icon_url = 'https://i.imgur.com/AfFp7pu.png' })
 ```
 
 Then, to send this Embed inside your message, just include it in the Embeds parameter when you run `Webber.send`.
@@ -59,9 +60,9 @@ Then, to send this Embed inside your message, just include it in the Embeds para
 To create an Embed using the `discordpy` usage of **Webber**, simply start off by using `Webber.py.embed`
 ```luau
 local Embed: Webber.pyEmbed = Webber.py.embed({
-  title="Title",
-  description="Description",
-  color=Webber.py.Color.Blue()
+  title = "Title",
+  description = "Description",
+  color = Webber.py.Color.Blue()
 })
 ```
 

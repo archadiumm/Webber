@@ -123,5 +123,4 @@ export type EmbedJS = {
 	Fields: {{name: string, value: string, inline: boolean?}}?,
 }
 
-
 return EmbedJS

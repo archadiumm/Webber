@@ -1,4 +1,4 @@
-# <div align="center"> [<ins>**Webber**</ins>](https://github.com/archadiumm/Webber/releases/tag/release) </div>
+# <div align="center"> - [<ins>**Webber**</ins>](https://github.com/archadiumm/Webber/releases/tag/release) - </div>
 
 **Webber** is a new better way to utilize Discord webhooks in ROBLOX.
 
@@ -8,7 +8,9 @@ While I couldn't copy their syntaxes directly for obvious reasons, I framed my t
 
 # <div align="center"> Documentation </div>
 
-To start off, require **Webber** and get your **Webhook Link** ready like so;
+If you have not already, download **Webber** from the [latest release](https://github.com/archadiumm/Webber/releases/tag/release).
+
+Next, create a *sever script* and require **Webber** and get your **Webhook Link** ready like so;
 ```luau
 local Webber = require(path.to.Webber)
 local Webhook = "WebhookLink"
